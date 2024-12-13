@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "filtros"
+    "productos"
+    "footer";
+
+
+}
+.navbar{
+    grid-area: navbar;
+    background-color: aqua;
+
+}
+.filtros{
+    grid-area: filtros;
+    background-color: aquamarine;
+
+}
+.productos{
+    grid-area: productos;
+    background-color: beige;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: blueviolet;
+
+}
+
+@media (min-width:576px)
+{
+    .container{
+        grid-template-areas: 
+        "navbar navbar"
+        "filtros productos"
+        "footer footer";
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
